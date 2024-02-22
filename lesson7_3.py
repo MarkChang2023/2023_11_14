@@ -9,7 +9,7 @@ print("==========猜數字遊戲==========")
 while True:
     keyin = pyip.inputInt(f"請猜數字範圍{min}~{max}:")
     count += 1
-    print(keyin )
+    print(keyin)
     if keyin == random_number:
         print(f"賓果!猜對了,答案是:{random_number}")
         print(f"您猜了{count}次")
