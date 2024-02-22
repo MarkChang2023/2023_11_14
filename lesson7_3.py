@@ -15,10 +15,10 @@ while True:
         print(f"您猜了{count}次")
         break
     elif keyin > random_number:
-        print(f"{keyin}請猜小一點")
+        print(f"{keyin} 請猜小一點")
         max = keyin - 1
     else:
-        print(f"{keyin}請猜大一點")
+        print(f"{keyin} 請猜大一點")
         min = keyin + 1
     print(f"您已經猜了{count}次")
     print("=====================")
