@@ -25,7 +25,8 @@ def getStudents(student_nums:int=1, scores_nums:int=2) -> list[list]:
 def saveToCSV(fileName:str, data:list[list], subject_nums:int) -> None:
     fileName += ".csv"
     subjects = [f'科目{i+1}'for i in range(subject_nums)]
-    fields = ['姓名'].extend(subjects)
+    fields = ['姓名']
+    fields.extend(subjects)
     with open(fileName, mode='w', encoding='utf-8',newline='') as file:
         writer = csv.writer(file)
         writer.writerow(fields)
