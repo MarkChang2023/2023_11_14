@@ -7,3 +7,6 @@ SQLAlchemy
 jinja2
 yfinance
 pandas_datareader
+scikit-learn
+numpy
+seaborn
